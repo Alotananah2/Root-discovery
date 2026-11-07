@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Root Discover</string>
+    <string name="tab_apps">Apps</string>
+    <string name="tab_devices">Devices</string>
+    <string name="tab_about">About</string>
+    <string name="search_hint">Search root apps &amp; modules</string>
+    <string name="filter_all">All</string>
+    <string name="filter_featured">★ Featured</string>
+    <string name="filter_github">GitHub only</string>
+    <string name="empty_results">No apps match your search.</string>
+    <string name="no_browser">No browser found to open this link.</string>
+    <string name="link_copied">Link copied</string>
+    <string name="open_repo">Open Awesome Android Root on GitHub</string>
+    <string name="open_issues">Suggest an app or report a broken link</string>
+    <string name="about_title">Root Discover</string>
+    <string name="about_body">Root Discover is a pocket catalogue of apps, modules and tools for rooted Android devices: root managers (Magisk, KernelSU, APatch), LSPosed modules, ad blockers, debloaters, backup tools and more. Tap any entry to open its GitHub repository or homepage. Long-press to copy the link.\n\nThe Devices tab shows how open each phone brand is to bootloader unlocking, plus the device-specific projects that give temporary root on a locked bootloader.</string>
+    <string name="about_disclaimer_title">Before you root</string>
+    <string name="about_disclaimer">Rooting and unlocking the bootloader can wipe your data, void your warranty, trip Samsung Knox permanently, break banking and payment apps, and in rare cases brick a device. Always back up first, read the guide for your exact model, and only install apps from sources you trust. Root Discover only lists links; it does not root your device.</string>
+    <string name="about_credit">App and device data come from Awesome Android Root (MIT License), maintained by its contributors. Root Discover is an independent viewer and is not affiliated with the projects it lists.</string>
+</resources>

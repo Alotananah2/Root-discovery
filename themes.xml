@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.RootDiscover" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_green_light</item>
+        <item name="colorSecondary">#B5CCB8</item>
+        <item name="colorTertiary">#A2CED9</item>
+    </style>
+</resources>

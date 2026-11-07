@@ -1,0 +1,9 @@
+<resources>
+    <color name="brand_green">#2E7D32</color>
+    <color name="brand_green_light">#81C784</color>
+    <color name="icon_bg">#0F1F14</color>
+    <color name="status_easy">#2E7D32</color>
+    <color name="status_moderate">#F9A825</color>
+    <color name="status_restricted">#EF6C00</color>
+    <color name="status_unavailable">#C62828</color>
+</resources>
