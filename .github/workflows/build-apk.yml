@@ -13,11 +13,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Unzip project if it was uploaded as a zip
+        run: |
+          for z in $(find . -name "*.zip" -not -path "./.git/*"); do
+            echo "Unzipping $z"
+            unzip -o -q "$z" -d unzipped
+          done
+          echo "--- Files in repository ---"
+          find . -not -path "./.git/*" -maxdepth 4 | head -100
+
       - name: Find project folder
         run: |
-          DIR=$(dirname "$(find . -name settings.gradle.kts -not -path '*/node_modules/*' | head -1)")
-          echo "Project folder: $DIR"
-          echo "PROJECT_DIR=$DIR" >> $GITHUB_ENV
+          F=$(find . -name settings.gradle.kts -not -path "./.git/*" | head -1)
+          if [ -z "$F" ]; then
+            echo "::error::Project files not found. Upload RootDiscover.zip (or the unzipped folder) to the repository."
+            exit 1
+          fi
+          echo "PROJECT_DIR=$(dirname "$F")" >> $GITHUB_ENV
 
       - uses: actions/setup-java@v4
         with:
