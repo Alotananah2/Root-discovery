@@ -20,8 +20,7 @@ Requires Android 8.0 (API 26) or newer. Uses Material You colours on Android 12+
 
 1. Create a new repository on GitHub and upload everything in this folder (keep the `.github` folder).
 2. Open the **Actions** tab. The **Build APK** workflow runs automatically (or press *Run workflow*).
-3. When it finishes (about 3–5 minutes), open the run and download **Root-Discover-APK**.
-   Unzip it and install `Root-Discover.apk` on your phone (allow "Install unknown apps" when asked).
+3. When it finishes (about 3–5 minutes), open the run and download 
 
 To publish a release with the APK attached, push a tag: `git tag v1.0.0 && git push --tags`.
 
